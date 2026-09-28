@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Readapt Lab</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div class="eyebrow">READAPT LAB</div>
+    <h1>Настройте текст под себя</h1>
+    <label class="master"><span>Персональный режим</span><input id="enabled" type="checkbox"></label>
+  </header>
+
+  <main>
+    <label>Быстрый профиль
+      <select id="preset">
+        <option value="custom">Пользовательский</option>
+        <option value="calm">Спокойное чтение</option>
+        <option value="focus">Глубокий фокус</option>
+        <option value="night">Ночной режим</option>
+      </select>
+    </label>
+    <label>Шрифт
+      <select id="fontFamily">
+        <option value="system">Системный</option>
+        <option value="serif">Georgia</option>
+        <option value="lexend">Lexend / Verdana</option>
+        <option value="mono">Моноширинный</option>
+      </select>
+    </label>
+    <label>Размер <output id="fontSizeOut"></output><input id="fontSize" type="range" min="14" max="28" step="1"></label>
+    <label>Высота строки <output id="lineHeightOut"></output><input id="lineHeight" type="range" min="1.2" max="2.1" step="0.05"></label>
+    <label>Межбуквенный интервал <output id="letterSpacingOut"></output><input id="letterSpacing" type="range" min="-0.2" max="2" step="0.1"></label>
+    <label>Межсловный интервал <output id="wordSpacingOut"></output><input id="wordSpacing" type="range" min="0" max="8" step="0.5"></label>
+    <label>Ширина строки <output id="columnWidthOut"></output><input id="columnWidth" type="range" min="42" max="95" step="1"></label>
+    <label class="color-row">Цвет фона <input id="background" type="color"></label>
+
+    <div class="toggles">
+      <label><span>Без отвлекающих элементов</span><input id="distractionFree" type="checkbox"></label>
+      <label><span>Подсветка текущей строки</span><input id="readingRuler" type="checkbox"></label>
+      <label><span>Один абзац в фокусе</span><input id="paragraphFocus" type="checkbox"></label>
+      <label><span>Исследовательский режим</span><input id="researchMode" type="checkbox"></label>
+    </div>
+
+    <div class="quick-actions">
+      <button id="calibrate">Автокалибровка</button>
+      <button id="readAloud">Читать вслух</button>
+      <button id="researchSetup">Настроить исследование</button>
+      <button id="saveSite">Профиль для этого сайта</button>
+    </div>
+
+    <section class="experiment">
+      <h2>Мини-эксперимент</h2>
+      <p id="experimentHint">Сравните обычный и персональный режимы на реальных статьях.</p>
+      <div id="standaloneInput" class="hidden">
+        <label for="articleText">Вставьте сюда текст статьи</label>
+        <textarea id="articleText" rows="7" placeholder="Минимум 500 знаков. После начала прочитайте текст здесь, затем нажмите «Закончить и пройти тест»."></textarea>
+      </div>
+      <button id="startExperiment" class="primary">Начать чтение</button>
+      <button id="finishExperiment" class="primary hidden">Закончить и пройти тест</button>
+    </section>
+  </main>
+  <footer><button id="dashboard">Мои результаты</button><span id="status" role="status"></span></footer>
+  <script src="popup.js"></script>
+</body>
+</html>

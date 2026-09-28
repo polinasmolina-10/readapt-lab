@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Мои результаты — Readapt Lab</title><link rel="stylesheet" href="pages.css"></head>
+<body><main class="page">
+  <p class="brand">READAPT LAB</p><p class="kicker">ЛОКАЛЬНЫЕ ДАННЫЕ</p><h1>Ваши результаты чтения</h1>
+  <p class="lede">Сравнение станет полезнее после нескольких сессий в каждом режиме. Режим выбирается случайно.</p>
+  <section id="summary" class="summary"></section>
+  <section class="chart-card"><div class="section-head"><div><p class="kicker">СРАВНЕНИЕ</p><h2>Средние показатели условий</h2></div><span id="evidenceNote" class="legend"></span></div><div id="comparison"></div></section>
+  <section class="chart-card"><div class="section-head"><div><p class="kicker">ЭКСПЕРИМЕНТ</p><h2>Понимание и время</h2></div><span class="legend"><i class="standard"></i>Обычный <i class="personalized"></i>Персональный</span></div><div id="chart" class="chart"></div></section>
+  <section><div class="section-head"><div><p class="kicker">ИСТОРИЯ</p><h2>Последние сессии</h2></div><div><button id="exportCsv" class="secondary">Экспорт CSV</button> <button id="exportData" class="secondary">JSON</button></div></div><div id="history"></div></section>
+  <p class="privacy">Все результаты хранятся локально в Chrome. Расширение не отправляет содержимое страниц или результаты на сервер.</p>
+</main><script src="dashboard.js"></script></body></html>

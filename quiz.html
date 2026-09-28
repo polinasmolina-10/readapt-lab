@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Проверка понимания — Readapt Lab</title><link rel="stylesheet" href="pages.css">
+</head>
+<body>
+  <main class="page narrow">
+    <a class="brand" href="dashboard.html">READAPT LAB</a>
+    <div id="quizView">
+      <p class="kicker">ПОСЛЕ ЧТЕНИЯ</p><h1>Что осталось в памяти?</h1>
+      <p class="lede">Три коротких вопроса помогут оценить понимание текста. Не возвращайтесь к статье — здесь нет оценки знаний.</p>
+      <form id="quizForm"></form>
+      <label class="fatigue">Насколько утомительным было чтение? <strong id="fatigueOut">3 / 5</strong>
+        <input id="fatigue" type="range" min="1" max="5" value="3">
+      </label>
+      <button id="submitQuiz" class="primary" type="button">Сохранить результат</button>
+    </div>
+    <section id="doneView" class="card hidden"><p class="kicker">ГОТОВО</p><h1>Результат сохранён</h1><p id="scoreText" class="lede"></p><a class="button-link" href="dashboard.html">Открыть дашборд</a></section>
+  </main><script src="quiz.js"></script>
+</body>
+</html>
