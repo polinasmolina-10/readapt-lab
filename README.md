@@ -4,7 +4,7 @@ Readapt Lab is a privacy-first Chrome extension that personalizes digital typogr
 
 > **Status:** working research prototype, version 0.3.0. Readapt is not a diagnostic or medical product.
 
-![Readapt Lab welcome screen](docs/screenshots/welcome.png)
+![Readapt Lab welcome screen](welcome.png)
 
 ## Why Readapt?
 
@@ -28,7 +28,7 @@ The current prototype records comprehension score, reading duration, and self-re
 
 | Reading controls | Automatic calibration | Results dashboard |
 |---|---|---|
-| ![Reading controls](docs/screenshots/popup.png) | ![Calibration](docs/screenshots/calibration.png) | ![Dashboard](docs/screenshots/dashboard.png) |
+| ![Reading controls](popup.png) | ![Calibration](calibration.png) | ![Dashboard](dashboard.png) |
 
 ## Current features
 
@@ -127,7 +127,7 @@ readapt-lab/
 ├── quiz.*
 ├── dashboard.*
 ├── welcome.*
-└── docs/screenshots/
+└── screenshots (*.png)
 ```
 
 ## Author
